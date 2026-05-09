@@ -1,0 +1,62 @@
+<callout emoji="📌" background-color="light-blue" border-color="blue">
+  <p><b>摘要：</b>用一两句话说明这份页面的目标、受众和主要结论。</p>
+</callout>
+
+<h1>导航</h1>
+<table>
+  <thead>
+    <tr>
+      <th background-color="light-gray">页面</th>
+      <th background-color="light-gray">用途</th>
+      <th background-color="light-gray">状态</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>父页面</td>
+      <td>总览、目录、决策入口</td>
+      <td><code>ready</code></td>
+    </tr>
+    <tr>
+      <td>子页面 A</td>
+      <td>主题展开或执行细节</td>
+      <td><code>draft</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>待办</h1>
+<checkbox done="false">补充背景材料</checkbox>
+<checkbox done="false">确认负责人和截止时间</checkbox>
+<checkbox done="true">创建文档骨架</checkbox>
+
+<h1>核心内容</h1>
+<grid>
+  <column width-ratio="0.5">
+    <h2>背景</h2>
+    <p>说明当前问题、约束和上下文。</p>
+  </column>
+  <column width-ratio="0.5">
+    <h2>方案</h2>
+    <p>说明推荐做法、收益和风险。</p>
+  </column>
+</grid>
+
+<h1>参考网页</h1>
+<bookmark name="飞书开放平台文档" href="https://open.feishu.cn/document/"></bookmark>
+<p><a type="url-preview" href="https://open.feishu.cn/document/">飞书开放平台文档</a></p>
+
+<h1>关键时间</h1>
+<time expire-time="1775916000000" notify-time="1775912400000" should-notify="false">里程碑提醒</time>
+
+<h1>示例命令</h1>
+<pre lang="powershell" caption="创建并更新飞书文档"><code>lark-cli docs +create --api-version v2 --doc-format xml --content '&lt;title&gt;标题&lt;/title&gt;'
+lark-cli docs +update --api-version v2 --doc '&lt;doc&gt;' --command append --doc-format xml --content '@./content.xml'</code></pre>
+
+<h1>能力图</h1>
+<p>下面插入空白画板，后续用 whiteboard-cli 写入 Mermaid、PlantUML 或 DSL 图。</p>
+<whiteboard type="blank"></whiteboard>
+
+<callout emoji="⚠️" background-color="light-yellow" border-color="yellow">
+  <p><b>注意：</b>写操作会真实修改飞书数据。复杂变更前先 dry-run 或读取现有 block id。</p>
+</callout>

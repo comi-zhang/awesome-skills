@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lark Rich Doc Builder"
+  short_description: "Create rich Feishu/Lark docs, Wiki page trees, and native document blocks."
+  default_prompt: "Create a polished Feishu/Lark rich document or Wiki page system using native XML blocks such as todos, tables, callouts, bookmarks, buttons, reminders, media, and whiteboards."

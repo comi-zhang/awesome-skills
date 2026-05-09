@@ -1,4 +1,0 @@
-interface:
-  display_name: "Lark Visual Doc Builder"
-  short_description: "Create Feishu/Lark docs with native XML blocks and whiteboards."
-  default_prompt: "Create a polished Feishu/Lark document by first creating an empty doc, appending native XML content, inserting a blank whiteboard, and writing a diagram into it."
